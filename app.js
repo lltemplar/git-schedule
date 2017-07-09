@@ -15,7 +15,7 @@ var cmd = require('./script.js');
 */
 
 function scheduleCronstyle() {
-    schedule.scheduleJob('*/5 * * * * *', function () {
+    schedule.scheduleJob('0 * * * * *', function () {
         console.log('scheduleCronstyle:' + new Date());
         console.log(cmd);
         exec(cmd, function (error, stdout, stderr) {
