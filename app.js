@@ -15,7 +15,7 @@ var cmd = require('./script.js');
 */
 
 function scheduleCronstyle() {
-    schedule.scheduleJob('* * */1 * * *', function () {
+    schedule.scheduleJob('0 0 * * * *', function () {
         console.log('scheduleCronstyle:' + new Date());
         delete require.cache['./script.js'];
         
