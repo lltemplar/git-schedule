@@ -1,5 +1,5 @@
 var script = [
-    "echo '' > .temp",
+    "echo '1' > .temp",
     "git pull origin master",
     "git add .",
     "git commit -m \"commit code in " + getDate() + "\"",
