@@ -1,0 +1,27 @@
+{
+  "name": "git-schedule",
+  "version": "0.0.1",
+  "description": "This is a project to light github commit record",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lltemplar/git-schedule.git"
+  },
+  "keywords": [
+    "git",
+    "node",
+    "schedule"
+  ],
+  "author": "lltemplar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lltemplar/git-shedule/issues"
+  },
+  "homepage": "https://github.com/lltemplar/git-shedule#readme",
+  "dependencies": {
+    "node-schedule": "^1.2.3"
+  }
+}
