@@ -15,14 +15,8 @@ var cmd = require('./script.js');
 */
 
 function scheduleCronstyle() {
-    schedule.scheduleJob('*/5 * * * * *', function () {
-        console.log('scheduleCronstyle:' + new Date());
-        delete require.cache['./script.js'];
-        
-        console.log(cmd.build());
+    schedule.scheduleJob('*/10 * * * * *', function () {        
         exec(cmd.build(), function (error, stdout, stderr) {
-             //console.dir(stdout);
-             //console.error(stderr);
         });
     });
 }
