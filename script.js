@@ -3,7 +3,7 @@ var script = [
     "git add . ",
     "git commit -m 'commit code in " + getDate() + "'",
     "git push --set-upstream origin master"
-];
+]; 
  
 function getDate() {
     var d = new Date();
