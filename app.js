@@ -16,12 +16,14 @@ var cmd = require('./script.js');
 
 function scheduleCronstyle() {
     schedule.scheduleJob('*/5 * * * * *', function () {
-        console.log('scheduleCronstyle:' + new Date());
-        console.log(cmd);
-        exec(cmd, function (error, stdout, stderr) {
-            console.dir(stdout);
-            console.error(stderr);
-        });
+        console.log('scheduleCronstyle:' + new Date());        
+        cmd.forEach(function (v, i) {
+            console.log(v);
+            exec(v, function (error, stdout, stderr) {
+                console.dir(stdout);
+                console.error(stderr);
+            });
+        })
     });
 }
 
