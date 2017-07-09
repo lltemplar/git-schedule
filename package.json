@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/lltemplar/git-shedule#readme",
   "dependencies": {
+    "forever": "^0.15.3",
     "node-schedule": "^1.2.3"
   }
 }
