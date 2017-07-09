@@ -2,7 +2,7 @@ var script = [
     "git pull origin master",
     "git add .",
     "git commit -m 'commit code in " + getDate()+"'",
-    "git push"
+    "git push --set-upstream origin master"
 ].join('&');
 
 function getDate() {
