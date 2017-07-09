@@ -5,7 +5,7 @@
 ## Install
 - clone code
 - npm install
-- node app
+- node app.js
 
 ## edit schedule task
 - edit exec time in app.js
