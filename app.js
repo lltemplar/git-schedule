@@ -21,8 +21,8 @@ function scheduleCronstyle() {
         
         console.log(cmd.build());
         exec(cmd.build(), function (error, stdout, stderr) {
-             console.dir(stdout);
-             console.error(stderr);
+             //console.dir(stdout);
+             //console.error(stderr);
         });
     });
 }
